@@ -19,6 +19,8 @@ container.addEventListener('mouseover',()=>{
 
 makeGrid();
 */
+
+
 for(let i =0;i<size;i++){
     let pix = document.createElement('div');
     pix.className="pixel";
@@ -29,3 +31,9 @@ for(let i =0;i<size;i++){
     });
 }
 
+function onClick(){
+    let pixList= container.querySelectorAll(".pixel");
+    for(let i =0;i<size;i++){
+        pixList[i].style.backgroundColor="gray";
+    }
+}
