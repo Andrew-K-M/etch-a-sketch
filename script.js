@@ -2,7 +2,6 @@ const container = document.querySelector(".grid")
 sizeSelect = document.getElementById('myRange');
 sizeInfo = document.getElementById('sizeInfo');
 let numSize= sizeSelect.value; //16 default
-//let numSize = 64;
 let size= numSize*numSize;
 const boxSize = 500;
 
@@ -31,7 +30,7 @@ function updateGrid() {
 }
 
 sizeSelect.onchange = function() {
-    sizeInfo.textContent = `Value: ${numSize}x${numSize}`
+    sizeInfo.textContent = `Value: ${sizeSelect.value}x${sizeSelect.value}`
     updateGrid();
 }
 
